@@ -1,0 +1,113 @@
+/* ==============================
+   ESTILOS GENERALES DE LA PÁGINA
+   ============================== */
+body {
+    /* Tipo de letra */
+    font-family: Arial, sans-serif;
+    /* Color hexadecimal */
+    background-color: #8b4ed4;
+    /* Centramos la tarjeta */
+    display: flex;
+    flex-direction: column; /* Apila los objetos de arriba hacia abajo */
+    justify-content: center;
+    align-items: center;
+    /* Unidad vh */
+    height: 100vh;
+    /* Eliminamos el margen */
+    margin: 0;
+}
+/* ==============================
+   ESTILO DE LA TARJETA
+   ============================== */
+.tarjeta {
+    /* Color usando RGB */
+    background-color: rgb(255, 251, 251);
+    /* Unidad px */
+    width: 350px;
+    /* Unidad rem */
+    padding: 2rem;
+    /* Centramos el texto */
+    text-align: center;
+    /* Bordes redondeados */
+    border-radius: 15px;
+    /* Sombra usando rgba */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Unidad % */
+    max-width: 80%;
+}
+/* ==============================
+   FOTO DE PERFIL
+   ============================== */
+.foto {
+    /* Tamaño usando px */
+    width: 250px;
+    height: 300px;
+    /* Centramos la foto */
+    margin: 0 auto -2rem;
+    /* Hacemos la foto circular */
+    border-radius: 50%;
+    /* Ocultamos lo que salga del círculo */
+    overflow: hidden;
+    /* Sombra usando rgba */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Imagen dentro del círculo */
+.foto img {
+    /* Unidad % */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* ==============================
+   TÍTULO
+   ============================== */
+h1 {
+    /* Color usando HSL */
+    color: hsl(251, 95%, 48%);
+    /* Unidad rem */
+    font-size: 2rem;
+    /* Unidad em */
+    margin-bottom: 0.5em;
+}
+/* ==============================
+   DESCRIPCIÓN, aqui las configuraciones pueden ser como las de word pero en codigo :D
+   ============================== */
+p {
+    /* Color hexadecimal de la letra*/
+    color: #000000;
+    /* Tamaño usando rem fuente */
+    font-size: 1rem;
+    /* Unidad em longitud*/
+    line-height: 1.5em;
+    /* Unidad em margen*/
+    margin: 1em;
+}
+/* ==============================
+   BOTÓN
+   ============================== */
+.boton {
+    display: inline-block;/*hace boton se desplaze*/
+    /* Color hexadecimal */
+    background-color: #000000;/*color del boton*/
+    /* Color usando keyword  de las letras*/
+    color: rgb(255, 254, 254);  
+    /* Unidad em */
+    padding: 0.7em 1.5em;
+    /* Bordes redondeados */
+    border-radius: 8px;
+    /* Unidad em */
+    margin-top: 1em;
+    /* Unidad rem */
+    font-size: 1rem;
+    /* Sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Animación suave */
+    transition: 0.3s;
+}
+/* ==============================
+   EFECTO HOVER DEL BOTÓN
+   ============================== */
+.boton:hover {
+    /* Cambia a azul al pasar el cursor */
+    background-color: rgb(43, 0, 255);
+}
